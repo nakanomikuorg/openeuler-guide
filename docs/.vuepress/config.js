@@ -76,7 +76,11 @@ module.exports = {
         children: [
           {
             text: "💾 基础安装",
-            children: ["/rookie/pre-install.md", "/rookie/pre-virt.md"],
+            children: [
+              "/rookie/pre-install.md",
+              "/rookie/pre-virt.md",
+              "/rookie/basic-install.md",
+            ],
           },
           // {
           //   text: "🔩 进阶安装",
