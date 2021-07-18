@@ -82,11 +82,10 @@ module.exports = {
               "/rookie/basic-install.md",
             ],
           },
-          // {
-          //   text: "🔩 进阶安装",
-          //   children: [
-          //   ],
-          // },
+          {
+            text: "🔩 进阶安装",
+            children: ["/rookie/desktop-env-and-app.md"],
+          },
         ],
       },
     ],
