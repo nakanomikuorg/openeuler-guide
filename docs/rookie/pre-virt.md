@@ -169,61 +169,7 @@ sidebarDepth: 2
 
 ## 2. 下载安装镜像
 
-1. 打开 [openEuler 镜像列表](https://openeuler.org/zh/mirror/list/) > 选择一个合适的镜像源（一般来说地理位置越近下载速度越快，此处以 [华为云](https://repo.huaweicloud.com/openeuler/) 为例）：
-
-   ![download-1](../static/rookie/pre-virt/download-1.png)
-
-2. 选择合适版本，此处以 openEuler 21.03 为例：
-
-   ![download-2](../static/rookie/pre-virt/download-2.png)
-
-3. 依次进入 `ISO` > `x86_64` > 点击相关文件以将安装镜像 `openEuler-21.03-aarch64-dvd.iso` 和校验文件 `openEuler-21.03-aarch64-dvd.iso.sha256sum` 下载到本地：
-
-   ![download-3](../static/rookie/pre-virt/download-3.png)
-
-4. 在下载位置打开终端，进行安装镜像完整性校验（可选）：
-
-   1. 使用以下命令依次查看校验文件中的 sha256 校验值：
-
-   :::: code-group
-   ::: code-group-item UNIX like
-
-   ```sh
-   cat openEuler-21.03-x86_64-dvd.iso.sha256sum
-   ```
-
-   :::
-   ::: code-group-item Windows
-
-   ```bat
-   type openEuler-21.03-x86_64-dvd.iso.sha256sum
-   ```
-
-   :::
-   ::::
-
-   2. 计算安装镜像的 sha256 校验值：
-
-   :::: code-group
-   ::: code-group-item UNIX like
-
-   ```sh
-   sha256sum openEuler-21.03-x86_64-dvd.iso
-   ```
-
-   :::
-   ::: code-group-item Windows
-
-   ```bat
-   certutil -hashfile openEuler-21.03-x86_64-dvd.iso SHA256
-   ```
-
-   :::
-   ::::
-
-   3. 检查两者是否一致。若不一致，请尝试重新下载安装镜像或检查镜像源可信度
-
-   ![download-4](../static/rookie/pre-virt/download-4.png)
+参考 [安装前的准备](./pre-install.md#_1-下载安装镜像) 下载 openEuler 安装镜像。
 
 ## 3. 配置 VirtualBox
 
@@ -342,4 +288,4 @@ sidebarDepth: 2
 
    ![test-2](../static/rookie/pre-virt/test-2.png)
 
-至此，在虚拟机中安装 openEuler 的准备工作已经完成。请参阅下一节 [openEuler 基础安装]() 进行安装。
+至此，在虚拟机中安装 openEuler 的准备工作已经完成。请参阅下一节 [openEuler 基础安装](./basic-install.md) 进行安装。
