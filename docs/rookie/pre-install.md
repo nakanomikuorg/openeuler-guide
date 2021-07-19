@@ -72,7 +72,7 @@
    :::
    ::::
 
-   3. 检查两者是否一致。若不一致，请尝试重新下载安装镜像或检查镜像源可信度
+   3. 检查两者是否一致。若不一致，请尝试重新下载安装镜像或检查镜像源可信度：
 
    ![download-4](../static/rookie/pre-install/download-4.png)
 
@@ -96,7 +96,7 @@ Windows 下推荐使用 [Ventoy](https://www.ventoy.net/cn/doc_start.html)、[Ru
 
 ### 2-2. Linux
 
-Linux 下同样可以使用 Ventoy 和 balenaEtcher。以 Arch Linux 为例，具体步骤可参阅 [Ventoy（推荐）](https://arch.icekylin.online/advanced/make-install-disk.html#ventoy-推荐) 以及 [balenaEtcher](https://arch.icekylin.online/advanced/make-install-disk.html#balenaetcher)。
+Linux 下同样可以使用 Ventoy 和 balenaEtcher。以 Arch Linux 为例，具体步骤可参阅 [Ventoy（推荐）](https://arch.icekylin.online/advanced/make-install-disk.html#ventoy-推荐)以及 [balenaEtcher](https://arch.icekylin.online/advanced/make-install-disk.html#balenaetcher)。
 
 也可以直接用 `dd` 命令进行刻录，具体步骤可参阅 [dd 命令](https://arch.icekylin.online/advanced/make-install-disk.html#dd-命令)。
 

@@ -88,6 +88,19 @@ module.exports = {
           },
         ],
       },
+      {
+        text: "🔬 专有领域",
+        children: [
+          {
+            text: "🖥️ 服务端",
+            children: ["/exclusive/tomcat.md"],
+          },
+          {
+            text: "🗄️ 数据库",
+            children: ["/exclusive/oracle.md"],
+          },
+        ],
+      },
     ],
     sidebarDepth: 1,
     smoothScroll: true,
