@@ -26,87 +26,11 @@ sidebarDepth: 2
 
 ### 1. 固定 IP 地址
 
-1. 在之前，我们已经演示了如何通过 `nmtui` 固定 IP 地址，我们还可以通过手动修改网卡对应配置文件来完成：
-
-   ```sh
-   sudoedit /etc/sysconfig/network-scripts/ifcfg-enp0s3 # 替换为对应网卡名
-   ```
-
-   修改为以下内容：
-
-   ```conf {4,10-15}
-   TYPE=Ethernet
-   PROXY_METHOD=none
-   BROWSER_ONLY=no
-   BOOTPROTO=static # 使用静态 IP 地址
-   DEFROUTE=yes
-   IPV4_FAILURE_FATAL=no
-   NAME=enp0s3
-   UUID=378885da-c689-441c-908b-239420641282
-   DEVICE=enp0s3
-   ONBOOT=yes # 开机启动
-   IPADDR=192.168.1.150 # IP 地址（根据实际情况填写）
-   NETMASK=255.255.255.0 # 子网掩码
-   GATEWAY=192.168.1.1 # 网关（根据实际情况填写）
-   DNS1=8.8.8.8 # DNS 服务器
-   DNS2=192.168.1.1 # DNS 服务器
-   ```
-
-   ![network-1](../static/exclusive/oracle/network-1.png)
-
-2. 重启网卡：
-
-   ```sh
-   sudo ifdown enp0s3 && sudo ifup enp0s3 # 关闭并立即启动网卡
-   ```
-
-3. 查看 IP 地址：
-
-   ```sh
-   ip addr
-   ```
-
-   ![network-2](../static/exclusive/oracle/network-2.png)
-
-4. 测试网络联通性：
-
-   ```sh
-   ping www.huawei.com
-   ```
-
-   ![ping](../static/exclusive/oracle/ping.png)
-
-   稍等片刻，若能看到数据返回，即说明已经联网。
+参阅 [1-2. 固定 IP 地址](../rookie/basic-cfg.md#_1-2-固定-ip-地址) 将 IP 地址固定。
 
 ### 2. 绑定主机名
 
-1. 查看主机名：
-
-   ```sh
-   hostname
-   ```
-
-2. 编辑 `/etc/hosts` 文件，将主机名和 IP 地址对应：
-
-   ```sh
-   sudoedit /etc/hosts
-   ```
-
-   在文件末尾添加一行：
-
-   ```conf
-   192.168.1.150   hostname # 替换为对应主机名
-   ```
-
-   ![network-3](../static/exclusive/oracle/network-3.png)
-
-3. 测试通过主机名网络连通性：
-
-   ```sh
-   ping hostname
-   ```
-
-   ![network-4](../static/exclusive/oracle/network-4.png)
+参阅 [1-3. 绑定主机名](../rookie/basic-cfg.md#_1-3-绑定主机名) 将 IP 地址和主机名绑定。
 
 ### 3. 关闭 SELinux
 

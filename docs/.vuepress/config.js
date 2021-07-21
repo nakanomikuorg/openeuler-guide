@@ -84,7 +84,10 @@ module.exports = {
           },
           {
             text: "🔩 进阶安装",
-            children: ["/rookie/desktop-env-and-app.md"],
+            children: [
+              "/rookie/basic-cfg.md",
+              "/rookie/desktop-env-and-app.md",
+            ],
           },
         ],
       },
@@ -97,7 +100,7 @@ module.exports = {
           },
           {
             text: "🗄️ 数据库",
-            children: ["/exclusive/oracle.md"],
+            children: ["/exclusive/oracle.md", "/exclusive/mongodb.md"],
           },
           {
             text: "🧰 运维",
