@@ -99,6 +99,10 @@ module.exports = {
             text: "🗄️ 数据库",
             children: ["/exclusive/oracle.md"],
           },
+          {
+            text: "🧰 运维",
+            children: ["/exclusive/ansible.md"],
+          },
         ],
       },
     ],
