@@ -149,6 +149,6 @@ sidebarDepth: 2
 
    ![tomcat-12](../static/exclusive/tomcat/tomcat-12.png)
 
-## 接下来？
+## 接下来...
 
-部署了基本的 Tomcat 服务之后，如果您是初学者，可以从了解 Tomcat 基本的目录结构开始学习 Tomcat；如果您已经对 Tomcat 非常熟悉了，相信您很快就可以完成 Java Web 应用的部署。
+🍻 恭喜！你已经成功在 openEuler 上部署了基本的 Tomcat 服务。如果您是初学者，可以从了解 Tomcat 基本的目录结构开始学习 Tomcat；如果您已经对 Tomcat 非常熟悉了，相信您很快就可以完成 Java Web 应用的部署。
